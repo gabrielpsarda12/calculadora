@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluladora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="nome-calc">Calculadora</h1>
+
+    <div class="calculadora">
+
+        <input type="text" class="display" id='display' disabled>
+
+        <div class="botoes">
+            <button class="operador" onclick="appendToDisplay('+')">
+                +
+            </button>
+
+            <button class="operador" onclick="appendToDisplay('-')">
+                -
+            </button>
+
+            <button class="operador" onclick="appendToDisplay('*')">
+                *
+            </button>
+
+            <button class="operador" onclick="appendToDisplay('/')">
+                /
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('1')">
+                1
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('2')">
+                2
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('3')">
+                3
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('4')">
+                4
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('5')">
+                5
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('6')">
+                6
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('7')">
+                7
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('8')">
+                8
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('9')">
+                9
+            </button>
+
+            <button class="numero" onclick="appendToDisplay('0')">
+                0
+            </button>
+
+            <button class="limpar" onclick="clearDisplay()">
+                C
+            </button>
+
+            <button class="igual" onclick="calculate()">
+                =
+            </button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid; /*cria um grid*/
+    justify-content: center; /* junto com o grid, deixa a calc no meio*/
+    height: 100px;          
+}
+
+.calculadora {
+    border: 1px solid white;
+    border-radius: 5px; /*deixar as pontas da borda curvadas*/
+    padding: 10px; /*afastamento das coisas, em todos os lados*/
+    width: 200px; /*largura da calculadora*/
+}
+
+.display {
+    padding: 0.01px;
+    font-size: 20px; /*tamanho da fonte*/
+    margin-bottom: 10px; /*margem de baixo do display*/
+    width: 195px; /*largura do display*/
+}
+
+.botoes {
+    display: grid; /*todos os botoes um em baixo do outro*/
+    grid-gap: 5px; /*distancia entre os botões*/
+    grid-template-columns: repeat(4, 1fr); /*cria um grid que repete 4 colunas com 1 fração por unidade*/
+
+}
+
+button {
+    padding: 5.3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.nome-calc {
+    padding: 17px;
+}
+
+.operador, .igual {
+    background-color: gray;
+    color: white;
+}
+
+.numero, .limpar  {
+    background-color: gray;
+}
+
+button:hover {
+    background-color: rgb(68, 37, 37);
+}
